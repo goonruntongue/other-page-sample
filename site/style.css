@@ -227,14 +227,14 @@ body {
     .container.help-you img.tail {
         left: 50%;
         top: unset;
-        bottom: -16%;
+        bottom: -14%;
         transform: rotate(260deg);
     }
     .container.help-you h1 {
         font-size: 2em;
     }
     .container.help-you .explain * {
-        font-size: 0.9em;
+        font-size: min(0.8em, 16px);
     }
     .container.help-you .circle span:nth-of-type(1) {
         -webkit-text-stroke: 1.5px white;
