@@ -1,0 +1,253 @@
+html {
+    --fontSet: "Poppins", "Zen Maru Gothic", sans-serif;
+}
+
+body {
+    font-family: var(--fontSet);
+    font-weight: 700;
+}
+
+.container.help-you {
+    width: min(1024px, 96%);
+    margin: 0 auto;
+}
+
+.container.help-you h1 {
+    font-weight: 500;
+    font-size: 3.9vw;
+    text-align: justify;
+}
+
+.container.help-you .explain {
+    font-size: 1.2em;
+}
+
+.container.help-you .inner-container {
+    background: #fef5da;
+}
+
+.container.help-you .inner-container div.inner-wrap {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em 2em 0;
+}
+
+.container.help-you .explain {
+    position: relative;
+}
+
+.container.help-you .explain::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 57.264957265%;
+}
+
+.container.help-you .explain * {
+    position: absolute;
+    margin: 0;
+}
+
+.container.help-you .circle {
+    width: 30%;
+    background: #fae06a;
+    border-radius: 50%;
+    white-space: nowrap;
+}
+
+.container.help-you .circle::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.container.help-you .circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+}
+
+.container.help-you .circle span:nth-of-type(1) {
+    -webkit-text-stroke: 3px white;
+}
+
+.container.help-you p.circle.c1 {
+    width: 14%;
+    top: 44%;
+    left: 3%;
+}
+
+.container.help-you p.circle.c2 {
+    width: 16%;
+    left: 12%;
+    top: 16%;
+}
+
+.container.help-you p.circle.c3 {
+    width: 12%;
+    top: 30%;
+    left: 28%;
+}
+
+.container.help-you p.circle.c4 {
+    width: 13.5%;
+    left: 39%;
+    top: 48%;
+}
+
+.container.help-you p.circle.c5 {
+    width: 13.5%;
+    top: 16%;
+    left: 43%;
+}
+
+.container.help-you p.circle.c6 {
+    width: 17%;
+    text-align: center;
+    top: -1%;
+    left: 60%;
+}
+
+.container.help-you p.circle.c7 {
+    width: 16%;
+    left: 60%;
+    top: 42%;
+}
+
+.container.help-you p.circle.c8 {
+    width: 16%;
+    top: 25%;
+    left: 77%;
+}
+
+.container.help-you .read {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+.container.help-you div#lottie {
+    width: 30%;
+    bottom: 0;
+    left: 12%;
+}
+
+.container.help-you div#lottie::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 81.1320754717%;
+}
+
+.container.help-you .balloon {
+    width: 60%;
+    padding: 0.4em;
+    border-radius: 100px;
+    border: min(0.45vw, 3px) solid #484fa2;
+    background: #f6f7f7;
+    left: 43%;
+    bottom: 2%;
+    font-size: 1.4vw;
+}
+
+.container.help-you .balloon p {
+    position: relative;
+    text-align: center;
+}
+
+.container.help-you img {
+    max-width: 100%;
+}
+
+.container.help-you img.tail {
+    width: 6%;
+    top: 9.6%;
+    left: -3.5%;
+}
+
+@media (max-width: 768px) {
+    .container.help-you .explain::after {
+        padding-top: 270%;
+    }
+    .container.help-you p.circle.c1 {
+        top: 23%;
+        left: 0%;
+        width: 40%;
+    }
+    .container.help-you p.circle.c2 {
+        top: 11%;
+        left: 19%;
+        width: 26%;
+    }
+    .container.help-you p.circle.c3 {
+        top: 51%;
+        left: 4%;
+        width: 39%;
+    }
+    .container.help-you p.circle.c4 {
+        top: 43%;
+        left: 39%;
+        width: 28%;
+    }
+    .container.help-you p.circle.c5 {
+        top: 27%;
+        left: 45%;
+        width: 32%;
+    }
+    .container.help-you p.circle.c6 {
+        top: 6%;
+        left: 60%;
+        width: 47%;
+    }
+    .container.help-you p.circle.c7 {
+        top: 53%;
+        left: 69%;
+        width: 23%;
+    }
+    .container.help-you p.circle.c8 {
+        top: 36%;
+        left: 73%;
+        width: 36%;
+    }
+    .container.help-you .circle span {
+        font-size: 1em;
+    }
+    .container.help-you div#lottie {
+        width: 75%;
+    }
+    .container.help-you .balloon {
+        width: 100%;
+        left: 0;
+        bottom: 24%;
+        font-size: 0.8em;
+        padding: 1em;
+    }
+    .container.help-you img.tail {
+        left: 50%;
+        top: unset;
+        bottom: -16%;
+        transform: rotate(260deg);
+    }
+    .container.help-you h1 {
+        font-size: 2em;
+    }
+    .container.help-you .explain * {
+        font-size: 0.9em;
+    }
+    .container.help-you .circle span:nth-of-type(1) {
+        -webkit-text-stroke: 1.5px white;
+    }
+}
+
+.circle {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.circle.popIn {
+    transform: scale(1);
+    opacity: 1;
+}

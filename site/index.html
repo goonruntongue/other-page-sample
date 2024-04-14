@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>こんな時にもねこのて貸します</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="inview.js"></script>
+</head>
+
+<body>
+    <!-- ここ以降をコピーする -->
+    <div class="container help-you">
+        <div class="img-box">
+            <img src="./img/sample-image.png" alt="">
+        </div>
+        <div class="inner-container">
+            <div class="inner-wrap">
+                <h1>こんなときにも「ねこのて」貸します</h1>
+                <div class="explain">
+                    <p class="read">
+                        交通事故以外のご増段も承ります。<br> たとえば…
+                    </p>
+                    <p class="circle c1"><span>契約書作成</span><span>契約書作成</span></p>
+                    <p class="circle c2"><span>相続</span><span>相続</span></p>
+                    <p class="circle c3"><span>民泊</span><span>民泊</span></p>
+                    <p class="circle c4"><span>証人代行</span><span>証人代行</span></p>
+                    <p class="circle c5"><span>在留資格</span><span>在留資格</span></p>
+                    <p class="circle c6"><span>自動車関係の<br>お手続き</span><span>自動車関係の<br>お手続き</span></p>
+                    <p class="circle c7"><span>補助金</span><span>補助金</span></p>
+                    <p class="circle c8"><span>建設業許可</span><span>建設業許可</span></p>
+                    <div class="balloon">
+                        <p>「ねこのて」で対応できないお手続きについては</p>
+                        <p>信頼できる専門の先生にお繋ぎいたしますので</p>
+                        <p>お気軽にご相談ください</p>
+                        <img src="./img/tail.svg" alt="" class="tail">
+                    </div>
+                    <div id="lottie"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lottie BodyMovin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        jQuery(function($) {
+            let lottieDOM = $("#lottie")[0];
+            let anime = lottie.loadAnimation({
+                container: lottieDOM,
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path: "img/mikeneko-talking.json"
+            })
+            anime.play();
+
+            $(".inner-container").bind("inview", function(event, isInView) {
+                if (isInView) {
+                    $(".circle").each((index, elem) => {
+                        setTimeout(() => {
+                            $(elem).addClass("popIn")
+                        }, 400 * index);
+                    })
+                } else {
+                    $(".circle").each((index, elem) => {
+                        $(elem).removeClass("popIn");
+                    })
+                }
+            })
+        });
+    </script>
+    <!-- ここまでコピーする -->
+</body>
+
+</html>
