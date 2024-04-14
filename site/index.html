@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>こんな時にもねこのて貸します</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -22,7 +25,7 @@
                 <h1>こんなときにも「ねこのて」貸します</h1>
                 <div class="explain">
                     <p class="read">
-                        交通事故以外のご増段も承ります。<br> たとえば…
+                        交通事故業務以外のご相談も承ります。<br> たとえば…
                     </p>
                     <p class="circle c1"><span>契約書作成</span><span>契約書作成</span></p>
                     <p class="circle c2"><span>相続</span><span>相続</span></p>
@@ -64,7 +67,7 @@
                     $(".circle").each((index, elem) => {
                         setTimeout(() => {
                             $(elem).addClass("popIn")
-                        }, 400 * index);
+                        }, 250 * index);
                     })
                 } else {
                     $(".circle").each((index, elem) => {

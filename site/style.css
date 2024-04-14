@@ -13,13 +13,14 @@ body {
 }
 
 .container.help-you h1 {
-    font-weight: 500;
-    font-size: 3.9vw;
+    font-weight: 600;
+    font-size: 3.2vw;
     text-align: justify;
 }
 
 .container.help-you .explain {
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 .container.help-you .inner-container {
@@ -124,8 +125,8 @@ body {
 }
 
 .container.help-you .read {
-    font-size: 1.8vw;
-    font-weight: 500;
+    font-size: 1.6vw;
+    font-weight: 600;
 }
 
 .container.help-you div#lottie {
@@ -247,11 +248,16 @@ body {
 
 .circle {
     opacity: 0;
-    transform: scale(0);
+    transform: translateY(10em) rotate(45deg) scale(0);
     transition: 0.5s;
 }
 
+.circle:nth-of-type(even) {
+    opacity: 0;
+    transform: translateY(-10em) rotate(-45deg) scale(0);
+}
+
 .circle.popIn {
-    transform: scale(1);
+    transform: translateY(0) rotate(0deg) scale(1);
     opacity: 1;
 }
