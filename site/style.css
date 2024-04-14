@@ -130,7 +130,7 @@ body {
 
 .container.help-you div#lottie {
     width: 30%;
-    bottom: 0;
+    bottom: 0%;
     left: 12%;
 }
 
@@ -170,6 +170,7 @@ body {
 @media (max-width: 768px) {
     .container.help-you .explain::after {
         padding-top: 270%;
+        padding-bottom: 20%;
     }
     .container.help-you p.circle.c1 {
         top: 23%;
@@ -220,7 +221,7 @@ body {
     .container.help-you .balloon {
         width: 100%;
         left: 0;
-        bottom: 24%;
+        bottom: 21%;
         font-size: 0.8em;
         padding: 1em;
     }
@@ -234,7 +235,10 @@ body {
         font-size: 2em;
     }
     .container.help-you .explain * {
-        font-size: min(0.8em, 16px);
+        font-size: 0.9em;
+    }
+    .container.help-you .balloon p {
+        font-size: min(0.7em, 14px) !important;
     }
     .container.help-you .circle span:nth-of-type(1) {
         -webkit-text-stroke: 1.5px white;
