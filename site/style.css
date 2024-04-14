@@ -247,6 +247,10 @@ body {
     .balloon p br {
         display: none;
     }
+    .circle,
+    .circle * {
+        font-weight: 600;
+    }
 }
 
 .circle {
