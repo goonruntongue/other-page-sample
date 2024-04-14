@@ -239,10 +239,13 @@ body {
         font-size: 0.9em;
     }
     .container.help-you .balloon p {
-        font-size: min(0.7em, 14px) !important;
+        font-size: min(0.8em, 16px) !important;
     }
     .container.help-you .circle span:nth-of-type(1) {
         -webkit-text-stroke: 1.5px white;
+    }
+    .balloon p br {
+        display: none;
     }
 }
 
